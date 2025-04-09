@@ -1,6 +1,53 @@
+```latex
+\documentclass[10.5pt]{letter}
+\usepackage[margin=0.75in]{geometry}
+\usepackage{tabularx}
+\usepackage{parskip}
+\usepackage{helvet}
+\renewcommand{\familydefault}{\sfdefault}
 
-  \documentclass{article}
-  \begin{document}
-  Hello, \LaTeX!
-  \end{document}
-  
+\signature{Mohammad Shahid Akhtar}
+\address{Kuala Lumpur, Malaysia 50603 \\ 22052133@siswa.um.edu.my \\ +60 14-878-4386}
+\date{\today}
+
+\begin{document}
+
+\begin{letter}{Hiring Manager\\Upnyx Innovative Solutions\\Street Address (Replace with company address if known)\\City, ZIP (Replace with company address if known)}
+
+\opening{Dear Hiring Manager,}
+
+As a Computer Science undergraduate specializing in Artificial Intelligence at the University of Malaya, with a GPA of 3.79, I am writing to express my enthusiastic interest in the AI/ML Intern position at Upnyx Innovative Solutions. My academic foundation and hands-on experience in machine learning make me eager to contribute to your AI project.
+
+I am a proactive and detail-oriented individual passionate about leveraging AI/ML to develop innovative solutions. I believe in the power of data-driven insights and am committed to contributing to projects that push the boundaries of AI technology and create impactful results.
+
+\vspace{0.3cm}
+\textbf{Summary of Qualifications:}
+\vspace{0.2cm}
+
+\renewcommand{\arraystretch}{1.4}
+\begin{tabularx}{\textwidth}{@{}p{0.45\textwidth}X@{}}
+\textbf{Advertised Requirement} & \textbf{My Qualification} \\
+\hline
+Knowledge of machine learning algorithms and techniques, including deep learning & Deep understanding of ML algorithms and techniques gained through coursework and practical application; experience with Deep Learning models evidenced by projects like \textbf{AgileIR} and AI-driven robotics using \textbf{YOLOv7}. \\
+Experience with programming languages commonly used in AI/ML, such as Python and R & Proficient in \textbf{Python}, used extensively in AI/ML projects and as Research Assistant at UMMC, achieving \textbf{20x faster} automated reasoning. Familiar with \textbf{R} for statistical analysis. \\
+Familiarity with common AI/ML frameworks, such as TensorFlow or PyTorch & Hands-on experience with \textbf{PyTorch} in projects like \textbf{AgileIR}, which innovated memory-efficient attention mechanisms, and familiarity with \textbf{TensorFlow} through academic projects and certifications like \textbf{Harvard CS50AI}. \\
+Strong analytical and problem-solving skills & Proven analytical and problem-solving capabilities demonstrated by optimizing ML models to \textbf{over 80\% accuracy} during an AI internship at IIT Kharagpur and developing software solutions for \textbf{40+ international students} as a Millennium Fellow. \\
+Ability to work independently and as part of a team & Demonstrated ability to work independently by founding and managing \textbf{DivergenCIE Coaching Pvt. Ltd.}, scaling it to \textbf{500 students}, and collaboratively as an AI Deep Learning Technician in the \textbf{Robotics Engineering Community}. \\
+Excellent communication and collaboration skills & Honed communication and collaboration skills as a Teaching Assistant, instructing a class of \textbf{46 students} in Java and object-oriented programming, and as Deputy Director at TedXUM, leading cross-functional teams to boost engagement by \textbf{40\%}. \\
+\end{tabularx}
+
+\vspace{0.5cm}
+I am excited about the opportunity to contribute to Upnyx Innovative Solutions and further develop my AI/ML skills. Thank you for considering my application. I look forward to hearing from you soon.
+
+\vspace{0.5cm}
+
+\begin{flushleft}
+\vspace{0.3cm}
+Sincerely,\\[2ex]
+Mohammad Shahid Akhtar
+\end{flushleft}
+
+\end{letter}
+
+\end{document}
+```
