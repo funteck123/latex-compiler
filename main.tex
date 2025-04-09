@@ -1,7 +1,3 @@
-\documentclass{article}
-\usepackage{amsmath}
-\usepackage{graphicx}
-
 \begin{document}
 
 Hello, world!
@@ -9,7 +5,7 @@ Hello, world!
 $E=mc^2$
 
 \begin{equation}
-    a^2 + b^2 = c^2
+a^2 + b^2 = c^2
 \end{equation}
 
 \begin{itemize}
@@ -17,11 +13,14 @@ $E=mc^2$
     \item Item 2
 \end{itemize}
 
-\begin{figure}[h]
+\begin{table}[h]
     \centering
-    %\includegraphics[width=0.8\textwidth]{placeholder.png}
-    \caption{Placeholder figure}
-    \label{fig:placeholder}
-\end{figure}
+    \begin{tabular}{c | c}
+        Heading 1 & Heading 2 \\
+        \hline
+        Entry 1 & Entry 2 \\
+    \end{tabular}
+    \caption{A simple table}
+\end{table}
 
 \end{document}
