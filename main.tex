@@ -1,69 +1,78 @@
-\documentclass[11pt]{letter}
-\usepackage[margin=0.65in]{geometry}
-\usepackage{tabularx}
-\usepackage{parskip}
-\usepackage{helvet}
-\usepackage{array}
-\usepackage{textcomp}
-\renewcommand{\familydefault}{\sfdefault}
+\documentclass[11pt, letterpaper]{article}
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{graphicx}
+\usepackage{hyperref}
+\usepackage{fancyhdr}
+\usepackage{enumitem}
 
-% Safe ampersand replacement
-\newcommand{\textamp}{\&}
+\pagestyle{fancy}
+\fancyhead{} % clear all header fields
+\fancyhead[EC]{}
+\fancyfoot{} % clear all footer fields
+\fancyfoot[C]{\thepage}
+\renewcommand{\headrulewidth}{0.0pt}
+\renewcommand{\footrulewidth}{0.0pt}
 
-\signature{Mohammad Shahid Akhtar}
-\address{Kuala Lumpur, Malaysia \\
- 22052133@siswa.um.edu.my \\
- +60 14-878-4386}
-\date{\today}
+% Adjust margins
+\usepackage[margin=0.75in]{geometry}
+
+\raggedright
+\setlength{\parindent}{0.0in}
+
+% Define colors
+\definecolor{darkgray}{rgb}{0.25,0.25,0.25}
+
+\hypersetup{colorlinks=false, urlcolor=blue, pdfborder={0 0 0}}
+
+\titleformat{\section}{\vspace{-12pt}\raggedright\Large\bfseries\color{darkgray}}{\thesection.}{0pt}{}[\vspace{-6pt}]
 
 \begin{document}
 
-\begin{letter}{Hiring Manager\\
-Avanade\\
- [Redacted due to privacy]}
+% Contact Information
+\begin{tabular*}{\textwidth}{l@{\extracolsep{\fill}}r}
+    {\Large \textbf{Your Name}} & Your Phone \\
 
-\opening{Dear Hiring Manager,}
+    Your Address & \href{mailto:your.email@example.com}{your.email@example.com} \\
 
-I am writing to express my strong interest in the Data Engineering Intern position at Avanade. Avanade's reputation for innovative data solutions and its partnership with Microsoft align perfectly with my aspirations to contribute to impactful, data-driven projects.
+    \href{yourwebsite.com}{yourwebsite.com} & Your LinkedIn Profile \\
 
-As a Computer Science student specializing in AI at the University of Malaya, I am eager to apply my skills in data analysis and programming to support Avanade's clients. The opportunity to contribute to exploratory data analysis and data visualization for client solutions is particularly exciting to me.
+\end{tabular*}
 
-\vspace{0.2cm}
-\textbf{Summary of Qualifications:}
-\vspace{0.1cm}
+\vspace{10pt}
 
-\renewcommand{\arraystretch}{1.15}
-{\small
-\begin{tabularx}{\textwidth}{@{}p{0.45\textwidth}X@{}}
-\textbf{Requirement} & \textbf{My Qualification} \\
+\today
 
-\hline
-Exploratory Data Analysis \newline for client solutions & As a Research Assistant, I utilized \texttt{pandas} in Python to streamline data processing pipelines, achieving a \textbf{20x speed increase} in medical image analysis, enhancing analytical efficiency. \\
+\vspace{10pt}
 
-Programming and Data Modeling & Proficient in SQL and Python, I developed a data platform, optimizing PostgreSQL database queries, resulting in a \textbf{50\% reduction} in data retrieval times for improved performance. \\
+Hiring Manager Name \\
 
-Data Visualization Techniques & Experienced in creating insightful dashboards using Power BI and Tableau, effectively communicating complex data findings in university projects and independent analyses. \\
+Hiring Manager Title \\
 
-Analytics Tools: SQL, Python, Power BI & Hands-on expertise in writing complex SQL queries for data extraction and manipulation, developing Python scripts for data analysis, and creating interactive reports with Power BI. \\
+Company Name \\
 
-Fast-paced Learning Environment & Proven ability to quickly learn and adapt, demonstrated through diverse projects encompassing AI research, data platform development, and leadership roles, thriving in dynamic settings. \\
+Company Address
 
-\end{tabularx}
-}
+\vspace{20pt}
 
-\vspace{0.4cm}
-I am confident that my skills in data analysis, programming with Python and SQL, and data visualization using Power BI, are well-suited to contribute to Avanade's data engineering projects. My proactive approach and eagerness to learn make me a strong candidate for this internship.
+Dear Hiring Manager Name,
 
-\vspace{0.4cm}
-I would appreciate the chance to discuss how my background aligns with Avanade's needs. I am available for a quick call or GMeet at your earliest convenience.
+I am writing to express my strong interest in the AI Engineer position at Company Name, as advertised on LinkedIn. Company Name's advancements in applying AI to sustainable energy solutions deeply align with my professional interests, and I am eager to contribute to your team's innovations in machine learning for environmental impact.
 
-\vspace{0.4cm}
-\begin{flushleft}
-Sincerely,\\
-[1.5ex]
-Mohammad Shahid Akhtar
-\end{flushleft}
+In my previous role as a Machine Learning Engineer at Previous Company, I spearheaded the development of a novel predictive model for energy consumption, improving forecast accuracy by 14\%, leveraging \textbf{TensorFlow} for efficient model training and deployment on cloud infrastructure.  Furthermore, I was instrumental in optimizing our anomaly detection system for smart grids, reducing false positives by 22\% through advanced feature engineering with \textbf{scikit-learn} and time-series analysis. My experience also includes building a real-time data processing pipeline for sensor data using \textbf{PyTorch}, which accelerated data ingestion by 30\%, enabling faster model updates and improved system responsiveness.
 
-\end{letter}
+I am confident that my proven ability to deliver measurable improvements in complex AI systems, combined with my expertise in these key frameworks, makes me a strong candidate for this role. I am excited about the opportunity to further discuss how my skills can support Company Name's mission in sustainable energy.
+
+Thank you for your time. I would appreciate the chance to schedule a quick call or GMeet to discuss my application further.
+
+Sincerely,
+
+Your Name
 
 \end{document}
