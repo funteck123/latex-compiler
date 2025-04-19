@@ -1,68 +1,48 @@
-\documentclass[11pt]{letter}
-\usepackage[margin=0.65in]{geometry}
-\usepackage{tabularx}
-\usepackage{parskip}
-\usepackage{helvet}
-\usepackage{array}
-\usepackage{textcomp}
-\renewcommand{\familydefault}{\sfdefault}
+\documentclass{letter}
+\usepackage{latexsym}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{amsfonts}
+\usepackage{graphicx}
+\usepackage{hyperref}
+\usepackage{xcolor}
 
-% Safe ampersand replacement
-\newcommand{\textamp}{\&}
+\colorlet{darkblue}{blue!70!black}
+\hypersetup{
+    colorlinks=true,
+    linkcolor=darkblue,
+    citecolor=darkblue,
+    urlcolor=darkblue
+}
 
-\signature{Mohammad Shahid Akhtar}
-\address{Kuala Lumpur, Malaysia \\
- 22052133@siswa.um.edu.my \\
- +60 14-878-4386}
+\address{Your Name\\
+Your Address\\
+Your Phone\\
+Your Email}
+
 \date{\today}
 
 \begin{document}
 
 \begin{letter}{Hiring Manager\\
-Avanade\\
- [Redacted due to privacy]}
+Hiring Department\\
+Tech Company Inc.\\
+123 Main Street\\
+Tech City, State 12345}
 
 \opening{Dear Hiring Manager,}
 
-I am writing to express my strong interest in the Data Engineering Intern position at Avanade. Avanade's reputation for innovative data solutions and its partnership with Microsoft align perfectly with my aspirations to contribute to impactful, data-driven projects.
+I am writing to express my strong interest in the \textbf{AI/ML Engineer} position at \textbf{Tech Company Inc.}, as advertised on \href{URL-to-job-posting}{LinkedIn}. Tech Company Inc.'s leadership in \textbf{innovative AI solutions for the healthcare industry} particularly excites me.
 
-As a Computer Science student specializing in AI at the University of Malaya, I am eager to apply my skills in data analysis and programming to support Avanade's clients. The opportunity to contribute to exploratory data analysis and data visualization for client solutions is particularly exciting to me.
+During my tenure at \textbf{Previous Company}, I led a project that boosted model accuracy by \textbf{15\%} using \textbf{TensorFlow} with advanced techniques like convolutional neural network optimization, leading to a \textbf{10\%} decrease in diagnostic errors. I also developed a high-throughput object detection system using \textbf{PyTorch} and YOLOv5 architecture, processing \textbf{10,000+} medical images per minute, significantly improving analysis speed. Furthermore, I utilized \textbf{scikit-learn} for feature selection and model evaluation in machine learning pipelines, cutting down model development time by \textbf{20\%}.
 
-\vspace{0.2cm}
-\textbf{Summary of Qualifications:}
-\vspace{0.1cm}
+I am confident my track record of delivering measurable improvements and my expertise in applying AI/ML to solve critical problems align well with the goals of Tech Company Inc.
 
-\renewcommand{\arraystretch}{1.15}
-{\small
-\begin{tabularx}{\textwidth}{@{}p{0.45\textwidth}X@{}}
-\textbf{Requirement} & \textbf{My Qualification} \\
+Thank you for your time. I am keen to discuss how I can contribute to your team and am available for a quick call or GMeet to further explore this opportunity.
 
-\hline
-Exploratory Data Analysis \newline for client solutions & As a Research Assistant, I utilized \texttt{pandas} in Python to streamline data processing pipelines, achieving a \textbf{20x speed increase} in medical image analysis, enhancing analytical efficiency. \\
+\closing{Sincerely,}
 
-Programming and Data Modeling & Proficient in SQL and Python, I developed a data platform, optimizing PostgreSQL database queries, resulting in a \textbf{50\% reduction} in data retrieval times for improved performance. \\
-
-Data Visualization Techniques & Experienced in creating insightful dashboards using Power BI and Tableau, effectively communicating complex data findings in university projects and independent analyses. \\
-
-Analytics Tools: SQL, Python, Power BI & Hands-on expertise in writing complex SQL queries for data extraction and manipulation, developing Python scripts for data analysis, and creating interactive reports with Power BI. \\
-
-Fast-paced Learning Environment & Proven ability to quickly learn and adapt, demonstrated through diverse projects encompassing AI research, data platform development, and leadership roles, thriving in dynamic settings. \\
-
-\end{tabularx}
-}
-
-\vspace{0.4cm}
-I am confident that my skills in data analysis, programming with Python and SQL, and data visualization using Power BI, are well-suited to contribute to Avanade's data engineering projects. My proactive approach and eagerness to learn make me a strong candidate for this internship.
-
-\vspace{0.4cm}
-I would appreciate the chance to discuss how my background aligns with Avanade's needs. I am available for a quick call or GMeet at your earliest convenience.
-
-\vspace{0.4cm}
-\begin{flushleft}
-Sincerely,\\
-[1.5ex]
-Mohammad Shahid Akhtar
-\end{flushleft}
+\signature{Your Name}
 
 \end{letter}
 
