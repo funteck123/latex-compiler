@@ -1,49 +1,66 @@
-\documentclass{letter}
+\documentclass[11pt, letterpaper]{article}
 \usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
 \usepackage{amsmath}
 \usepackage{amssymb}
-\usepackage{amsfonts}
 \usepackage{graphicx}
-\usepackage{hyperref}
-\usepackage{xcolor}
+\usepackage[pdftex, bookmarks, colorlinks=true, linkcolor=blue, citecolor=blue, urlcolor=blue]{hyperref}
 
-\colorlet{darkblue}{blue!70!black}
-\hypersetup{
-    colorlinks=true,
-    linkcolor=darkblue,
-    citecolor=darkblue,
-    urlcolor=darkblue
-}
-
-\address{Your Name\\
-Your Address\\
-Your Phone\\
-Your Email}
-
-\date{\today}
+\pagestyle{empty}
+\newcommand{\tab}{\hspace{.2in}}
 
 \begin{document}
 
-\begin{letter}{Hiring Manager\\
-Hiring Department\\
-Tech Company Inc.\\
-123 Main Street\\
-Tech City, State 12345}
+%---------- LETTER HEAD -----------
+\begin{tabular*}{\textwidth}{@{\extracolsep{\fill}} llr}
+  & & Jane Doe \\
 
-\opening{Dear Hiring Manager,}
+  & & 123 Main Street, Anytown, CA 12345 \\
 
-I am writing to express my strong interest in the \textbf{AI/ML Engineer} position at \textbf{Tech Company Inc.}, as advertised on \href{URL-to-job-posting}{LinkedIn}. Tech Company Inc.'s leadership in \textbf{innovative AI solutions for the healthcare industry} particularly excites me.
+  & & 555-555-5555 \\
 
-During my tenure at \textbf{Previous Company}, I led a project that boosted model accuracy by \textbf{15\%} using \textbf{TensorFlow} with advanced techniques like convolutional neural network optimization, leading to a \textbf{10\%} decrease in diagnostic errors. I also developed a high-throughput object detection system using \textbf{PyTorch} and YOLOv5 architecture, processing \textbf{10,000+} medical images per minute, significantly improving analysis speed. Furthermore, I utilized \textbf{scikit-learn} for feature selection and model evaluation in machine learning pipelines, cutting down model development time by \textbf{20\%}.
+jane.doe@email.com & & linkedin.com/in/janedoe \\
 
-I am confident my track record of delivering measurable improvements and my expertise in applying AI/ML to solve critical problems align well with the goals of Tech Company Inc.
+\end{tabular*}
 
-Thank you for your time. I am keen to discuss how I can contribute to your team and am available for a quick call or GMeet to further explore this opportunity.
+\vspace{0.3cm}
 
-\closing{Sincerely,}
+October 26, 2023
 
-\signature{Your Name}
+\vspace{0.5cm}
 
-\end{letter}
+Hiring Manager \\
+
+AI Department \\
+
+Tech Innovations Inc. \\
+
+456 Innovation Blvd, Tech City, CA 67890
+
+\vspace{0.8cm}
+
+Dear Hiring Manager,
+
+\vspace{0.3cm}
+
+I am writing to express my enthusiastic interest in the Machine Learning Engineer position at Tech Innovations Inc., advertised on LinkedIn. Tech Innovations' pioneering work in applying AI to revolutionize personalized education platforms is particularly compelling and aligns perfectly with my professional aspirations.
+
+During my tenure at Data Solutions Corp, I utilized \textbf{PyTorch} to develop a real-time object detection system for automated quality control in manufacturing, resulting in a \textbf{15\% decrease in production errors}.  Furthermore, I employed \textbf{TensorFlow} to build a customer churn prediction model that improved customer retention by \textbf{20\%}, significantly impacting revenue. My expertise extends to using \textbf{scikit-learn} for developing and optimizing machine learning models, ensuring robust performance and accuracy across various applications.
+
+I am confident that my skills in these key frameworks and my commitment to achieving measurable results make me a strong candidate for this role. I am eager to learn more about this opportunity and discuss how I can contribute to Tech Innovations Inc.'s continued success.
+
+\vspace{0.3cm}
+
+Thank you for your consideration.  I would appreciate the chance to schedule a brief call, or GMeet, to discuss my application further.
+
+\vspace{0.5cm}
+
+Sincerely, \\
+
+Jane Doe
 
 \end{document}
