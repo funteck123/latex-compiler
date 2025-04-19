@@ -1,78 +1,67 @@
-\documentclass[11pt, letterpaper]{article}
-\usepackage{latexsym}
-\usepackage[empty]{fullpage}
-\usepackage{titlesec}
-\usepackage{marvosym}
-\usepackage[usenames,dvipsnames]{color}
-\usepackage{verbatim}
-\usepackage{amsmath}
-\usepackage{amssymb}
-\usepackage{graphicx}
-\usepackage{hyperref}
-\usepackage{fancyhdr}
-\usepackage{enumitem}
+\documentclass[11pt]{letter}
+\usepackage[margin=0.65in]{geometry}
+\usepackage{tabularx}
+\usepackage{parskip}
+\usepackage{helvet}
+\usepackage{array}
+\usepackage{textcomp}
+\renewcommand{\familydefault}{\sfdefault}
 
-\pagestyle{fancy}
-\fancyhead{} % clear all header fields
-\fancyhead[EC]{}
-\fancyfoot{} % clear all footer fields
-\fancyfoot[C]{\thepage}
-\renewcommand{\headrulewidth}{0.0pt}
-\renewcommand{\footrulewidth}{0.0pt}
+% Safe ampersand replacement
+\newcommand{\textamp}{\&}
 
-% Adjust margins
-\usepackage[margin=0.75in]{geometry}
-
-\raggedright
-\setlength{\parindent}{0.0in}
-
-% Define colors
-\definecolor{darkgray}{rgb}{0.25,0.25,0.25}
-
-\hypersetup{colorlinks=false, urlcolor=blue, pdfborder={0 0 0}}
-
-\titleformat{\section}{\vspace{-12pt}\raggedright\Large\bfseries\color{darkgray}}{\thesection.}{0pt}{}[\vspace{-6pt}]
+\signature{Mohammad Shahid Akhtar}
+\address{Kuala Lumpur, Malaysia \\
+ 22052133@siswa.um.edu.my \\
+ +60 14-878-4386 \\
+ https://linkedin.com/in/mohammadshahidakhtar}
+\date{\today}
 
 \begin{document}
 
-% Contact Information
-\begin{tabular*}{\textwidth}{l@{\extracolsep{\fill}}r}
-    {\Large \textbf{Your Name}} & Your Phone \\
+\begin{letter}{Hiring Manager\\
+Upnyx Innovative Solutions\\
+ }
 
-    Your Address & \href{mailto:your.email@example.com}{your.email@example.com} \\
+\opening{Dear Hiring Manager,}
 
-    \href{yourwebsite.com}{yourwebsite.com} & Your LinkedIn Profile \\
+I am writing to express my strong interest in the AI/ML Intern position at Upnyx Innovative Solutions.  Having followed Upnyx Innovative Solutions' work in developing cutting-edge AI solutions, I am particularly excited about the opportunity to contribute to your new AI project as advertised. My background in Computer Science with a focus on Artificial Intelligence and Machine Learning makes me a strong candidate to support your team.
 
-\end{tabular*}
+My academic training and project experience have equipped me with a solid understanding of machine learning and the skills to develop effective AI solutions. I am a rigorous problem-solver with a collaborative approach, and I am eager to apply my skills to contribute to Upnyx Innovative Solutions' objectives.
 
-\vspace{10pt}
+\vspace{0.2cm}
+\textbf{Summary of Qualifications:}
+\vspace{0.1cm}
 
-\today
+\renewcommand{\arraystretch}{1.25}
+{\small
+\begin{tabularx}{\textwidth}{@{}p{0.45\textwidth}X@{}}
+\textbf{Advertised Requirements} & \textbf{My Qualifications} \\
 
-\vspace{10pt}
+\hline
+Develop AI chatbots & Experienced in developing AI chatbot prototypes using Dialogflow, applying NLP techniques to enhance user interaction and streamline customer engagement processes. \\
 
-Hiring Manager Name \\
+Refine and optimize AI/ML algorithms & Demonstrated ability in refining ML algorithms, achieving up to \textbf{20x faster reasoning} in AI models using scikit-learn for algorithm optimization in research projects. \\
 
-Hiring Manager Title \\
+Research new AI/ML techniques & Actively researching advanced AI/ML methods, including memory-efficient attention mechanisms, resulting in \textbf{50\% memory savings} in image restoration projects implemented with PyTorch. \\
 
-Company Name \\
+Analyze data to derive insights & Proven analytical skills in data analysis using Python and R, adept at interpreting complex data to drive model improvements, achieving \textbf{over 80\% accuracy} in predictive models leveraging TensorFlow. \\
 
-Company Address
+Familiarity with TensorFlow or PyTorch & Hands-on expertise with TensorFlow and PyTorch, utilizing these frameworks extensively in diverse projects such as image recognition and deep learning, complemented by scikit-learn for comprehensive ML model development. \\
 
-\vspace{20pt}
+\end{tabularx}
+}
 
-Dear Hiring Manager Name,
+\vspace{0.4cm}
+I am eager to further discuss how my skills and enthusiasm for AI/ML can support the innovative goals at Upnyx Innovative Solutions. I would appreciate the opportunity to schedule a brief call or Google Meet to explore this further.
 
-I am writing to express my strong interest in the AI Engineer position at Company Name, as advertised on LinkedIn. Company Name's advancements in applying AI to sustainable energy solutions deeply align with my professional interests, and I am eager to contribute to your team's innovations in machine learning for environmental impact.
+\vspace{0.4cm}
+\begin{flushleft}
+Sincerely,\\
+[1.5ex]
+Mohammad Shahid Akhtar
+\end{flushleft}
 
-In my previous role as a Machine Learning Engineer at Previous Company, I spearheaded the development of a novel predictive model for energy consumption, improving forecast accuracy by 14\%, leveraging \textbf{TensorFlow} for efficient model training and deployment on cloud infrastructure.  Furthermore, I was instrumental in optimizing our anomaly detection system for smart grids, reducing false positives by 22\% through advanced feature engineering with \textbf{scikit-learn} and time-series analysis. My experience also includes building a real-time data processing pipeline for sensor data using \textbf{PyTorch}, which accelerated data ingestion by 30\%, enabling faster model updates and improved system responsiveness.
-
-I am confident that my proven ability to deliver measurable improvements in complex AI systems, combined with my expertise in these key frameworks, makes me a strong candidate for this role. I am excited about the opportunity to further discuss how my skills can support Company Name's mission in sustainable energy.
-
-Thank you for your time. I would appreciate the chance to schedule a quick call or GMeet to discuss my application further.
-
-Sincerely,
-
-Your Name
+\end{letter}
 
 \end{document}
