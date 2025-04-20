@@ -1,66 +1,67 @@
-\documentclass[11pt, letterpaper]{article}
-\usepackage{latexsym}
-\usepackage[empty]{fullpage}
-\usepackage{titlesec}
-\usepackage{marvosym}
-\usepackage[usenames,dvipsnames]{color}
-\usepackage{verbatim}
-\usepackage{amsmath}
-\usepackage{amssymb}
-\usepackage{graphicx}
-\usepackage[pdftex, bookmarks, colorlinks=true, linkcolor=blue, citecolor=blue, urlcolor=blue]{hyperref}
+\documentclass[11pt]{letter}
+\usepackage[margin=0.65in]{geometry}
+\usepackage{tabularx}
+\usepackage{parskip}
+\usepackage{helvet}
+\usepackage{array}
+\usepackage{textcomp}
+\renewcommand{\familydefault}{\sfdefault}
 
-\pagestyle{empty}
-\newcommand{\tab}{\hspace{.2in}}
+% Safe ampersand replacement
+\newcommand{\textamp}{\&}
+
+\signature{Mohammad Shahid Akhtar}
+\address{Kuala Lumpur, Malaysia \\
+ 22052133@siswa.um.edu.my \\
+ +60 14-878-4386 \\
+ https://linkedin.com/in/mohammadshahidakhtar}
+\date{\today}
 
 \begin{document}
 
-%---------- LETTER HEAD -----------
-\begin{tabular*}{\textwidth}{@{\extracolsep{\fill}} llr}
-  & & Jane Doe \\
+\begin{letter}{Hiring Manager\\
+Upnyx Innovative Solutions\\
+ }
 
-  & & 123 Main Street, Anytown, CA 12345 \\
+\opening{Dear Hiring Manager,}
 
-  & & 555-555-5555 \\
+I am writing to express my strong interest in the AI/ML Intern position at Upnyx Innovative Solutions.  Having followed Upnyx Innovative Solutions' work in developing cutting-edge AI solutions, I am particularly excited about the opportunity to contribute to your new AI project as advertised. My background in Computer Science with a focus on Artificial Intelligence and Machine Learning makes me a strong candidate to support your team.
 
-jane.doe@email.com & & linkedin.com/in/janedoe \\
+My academic training and project experience have equipped me with a solid understanding of machine learning and the skills to develop effective AI solutions. I am a rigorous problem-solver with a collaborative approach, and I am eager to apply my skills to contribute to Upnyx Innovative Solutions' objectives.
 
-\end{tabular*}
+\vspace{0.2cm}
+\textbf{Summary of Qualifications:}
+\vspace{0.1cm}
 
-\vspace{0.3cm}
+\renewcommand{\arraystretch}{1.25}
+{\small
+\begin{tabularx}{\textwidth}{@{}p{0.45\textwidth}X@{}}
+\textbf{Advertised Requirements} & \textbf{My Qualifications} \\
 
-October 26, 2023
+\hline
+Develop AI chatbots & Experienced in developing AI chatbot prototypes using Dialogflow, applying NLP techniques to enhance user interaction and streamline customer engagement processes. \\
 
-\vspace{0.5cm}
+Refine and optimize AI/ML algorithms & Demonstrated ability in refining ML algorithms, achieving up to \textbf{20x faster reasoning} in AI models using scikit-learn for algorithm optimization in research projects. \\
 
-Hiring Manager \\
+Research new AI/ML techniques & Actively researching advanced AI/ML methods, including memory-efficient attention mechanisms, resulting in \textbf{50\% memory savings} in image restoration projects implemented with PyTorch. \\
 
-AI Department \\
+Analyze data to derive insights & Proven analytical skills in data analysis using Python and R, adept at interpreting complex data to drive model improvements, achieving \textbf{over 80\% accuracy} in predictive models leveraging TensorFlow. \\
 
-Tech Innovations Inc. \\
+Familiarity with TensorFlow or PyTorch & Hands-on expertise with TensorFlow and PyTorch, utilizing these frameworks extensively in diverse projects such as image recognition and deep learning, complemented by scikit-learn for comprehensive ML model development. \\
 
-456 Innovation Blvd, Tech City, CA 67890
+\end{tabularx}
+}
 
-\vspace{0.8cm}
+\vspace{0.4cm}
+I am eager to further discuss how my skills and enthusiasm for AI/ML can support the innovative goals at Upnyx Innovative Solutions. I would appreciate the opportunity to schedule a brief call or Google Meet to explore this further.
 
-Dear Hiring Manager,
+\vspace{0.4cm}
+\begin{flushleft}
+Sincerely,\\
+[1.5ex]
+Mohammad Shahid Akhtar
+\end{flushleft}
 
-\vspace{0.3cm}
-
-I am writing to express my enthusiastic interest in the Machine Learning Engineer position at Tech Innovations Inc., advertised on LinkedIn. Tech Innovations' pioneering work in applying AI to revolutionize personalized education platforms is particularly compelling and aligns perfectly with my professional aspirations.
-
-During my tenure at Data Solutions Corp, I utilized \textbf{PyTorch} to develop a real-time object detection system for automated quality control in manufacturing, resulting in a \textbf{15\% decrease in production errors}.  Furthermore, I employed \textbf{TensorFlow} to build a customer churn prediction model that improved customer retention by \textbf{20\%}, significantly impacting revenue. My expertise extends to using \textbf{scikit-learn} for developing and optimizing machine learning models, ensuring robust performance and accuracy across various applications.
-
-I am confident that my skills in these key frameworks and my commitment to achieving measurable results make me a strong candidate for this role. I am eager to learn more about this opportunity and discuss how I can contribute to Tech Innovations Inc.'s continued success.
-
-\vspace{0.3cm}
-
-Thank you for your consideration.  I would appreciate the chance to schedule a brief call, or GMeet, to discuss my application further.
-
-\vspace{0.5cm}
-
-Sincerely, \\
-
-Jane Doe
+\end{letter}
 
 \end{document}
